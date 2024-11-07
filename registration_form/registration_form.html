@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Course Registration Form</h2>
+    <form action="registration_process.php" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" name="id" required><br><br>
+
+        <label for="qualification">Academic Qualification:</label><br>
+        <input type="text" id="qualification" name="qualification" required><br><br>
+
+        <label for="university">University:</label><br>
+        <input type="text" id="university" name="university" required><br><br>
+
+        <label for="pdf">Upload PDF:</label><br>
+        <input type="file" id="pdf" name="pdf" accept=".pdf" required><br><br>
+        <label for="image">Upload Image:</label><br>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
