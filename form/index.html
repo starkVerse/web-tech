@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="register">
+            <h1>Travel reservation form</h1>
+            
+            <h3> *denotes mandatory</h3>
+            <form>
+                <label>Full Name*:</label>
+                <br>
+                <input type="text" name="full_name" placeholder="FirstName LastName"/>
+                <br>
+                <label>Email address*:</label>
+                <br>
+                <input type="email" name="email" placeholder="Email_Address"/>
+                <br>
+                <label>Select Tour Package*:</label>
+                <br>
+                <select name="dropdown">
+                    <option value="Goa" selected>Goa</option>
+        
+                </select>
+                <br>
+                <label>Arrival date*:</label>
+                <br>
+                <input type="date" name="date"/>
+                <br>
+                <label>Number of persons*:</label>
+                <br>
+                <input type="text" name="Np" placeholder="Unknown_type"/>
+                <br>
+                <label>What would you want to avail?*:</label>
+                <br>
+                <label>Boarding</label>
+                <input type="checkbox" name="Boarding" placeholder="on"> 
+                <br>
+                <label>Fooding</label>
+                <input type="checkbox" name="Fooding" value="on">
+                <br>
+                <label>Sight seeing</label>
+                <input type="checkbox" name="Sight seeing" value="on">
+                <br>
+                <label>discount coupon code:</label>
+                <br>
+                <input type="text" name="code" placeholder="Unknown_type"/>
+                <br>
+                <label>Term and conditions*:</label>
+                <br>
+                
+                <input type="radio" name="tc" value="I agree"/>I agree
+                
+                <input type="radio" name="tc" value="I disagree"/>I disagree
+                <br>
+                <input type="submit" name="submit" value="Complete Reservation"/>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
